@@ -1,7 +1,6 @@
 import React from 'react'
 import * as S from './styles'
-import Logo from '../assets/logo.svg'
-// import Logo from '../assets/logo_utkast1.png'
+// import Logo from '../assets/logo_2_react.png'
 import { NavLink } from 'react-router-dom'
 
 type Props = {
@@ -12,8 +11,8 @@ const Navbar = (props: Props) => {
   return (
     <S.Flexcontainer >
 
-      <NavLink to="/">
-        <S.LogoUl src={Logo} alt={'Gustavo Scarpim'} />
+      <NavLink to="/" style={{ textDecoration: 'none' }}>
+        <S.Logo>&lt; Dybdal /&gt;</S.Logo>
       </NavLink>
 
         <S.Ul open={props.open}>
@@ -26,14 +25,6 @@ const Navbar = (props: Props) => {
           >
             <li> About </li>
           </NavLink>
-          <NavLink to="/cv"
-            activeStyle={{
-              fontWeight: 'bold',
-              color: '#0DADEA'
-            }}
-          >
-            <li>Cv</li>
-          </NavLink>
           <NavLink to="/projects"
             activeStyle={{
               fontWeight: 'bold',
@@ -42,6 +33,15 @@ const Navbar = (props: Props) => {
           >
             <li>Projects</li>
           </NavLink>
+          <NavLink to="/cv"
+            activeStyle={{
+              fontWeight: 'bold',
+              color: '#0DADEA'
+            }}
+          >
+            <li>CV</li>
+          </NavLink>
+
         </S.Ul>
 
     </S.Flexcontainer>

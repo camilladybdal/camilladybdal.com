@@ -1,4 +1,5 @@
 import styled from 'styled-components'
+import image from '../assets/wave.svg'
 
 interface INav {
   open: boolean;
@@ -11,7 +12,6 @@ export const Ul = styled.ul<INav>`
   justify-content: flex-end;
   align-items: center;
   font-size: 18px;
-  height: 110px;
 
   a {
     text-decoration: none;
@@ -52,23 +52,21 @@ export const Ul = styled.ul<INav>`
     }
   }
 `
-export const LogoUl = styled.img`
-  display: flex;
-  height: 70px;
-  object-fit: contain;
+export const Logo = styled.h1`
+    color: black;
+    text-decoration: none !important;
+    font-size: 1.5rem;
+    font-weight: 10000;
+    font-family: 'Trebuchet MS';
 
-  @media (max-width: 768px) {
-    display: flex;
-    width: 160px;
-    height: 70px;
-    object-fit: contain;
-  }
+    //fiks font senere
 `
+
 export const Flexcontainer = styled.div`
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 10px 0 0 5px;
+  height: 10vh;
 `
 
 export const Burger = styled.div<INav>`
@@ -103,5 +101,50 @@ export const Burger = styled.div<INav>`
     &:nth-child(3) {
       transform: ${(props) => props.open ? 'rotate(-45deg)' : 'rotate(0)'};
     }
+  }
+`
+
+/* Footer 1 */
+
+export const Ocean = styled.div`
+  height: 5%;
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  background: #FFE194;
+`
+
+export const Wave = styled.div` 
+  background: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/756881/wavePurple.svg) repeat-x;  
+  background-image: url(${image});
+
+  
+  position: absolute;
+  bottom: -10px;
+  width: 6400px;
+  height: 198px;
+  animation: wave 12s cubic-bezier(0.36, 0.45, 0.63, 0.53) infinite, swell 8s ease -1.25s infinite;;
+  transform: translate3d(0, 0, 0);
+
+  @keyframes wave {
+    0% {
+      margin-left: 0;
+    }
+    100% {
+      margin-left: -1600px;
+    }
+  }
+  @keyframes swell {
+    0%,
+    100% {
+      transform: translate3d(0, -40px, 0);
+    }
+    50% {
+      transform: translate3d(0, -10px, 0);
+    }
+  }
+  .endWave{
+    display: none;
   }
 `
