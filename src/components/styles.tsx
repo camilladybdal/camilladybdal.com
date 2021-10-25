@@ -5,6 +5,25 @@ interface INav {
   open: boolean;
 }
 
+/* Header */
+export const Logo = styled.h1`
+    color: black;
+    text-decoration: none !important;
+    font-size: 1.7rem;
+    font-weight: bold;
+    font-family: 'Trebuchet MS';
+    margin-block-start: 0;
+    margin-block-end: 0;
+`
+
+export const Flexcontainer = styled.div`
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 5vh;
+  padding: 1em 1em 1em 1.5em;
+`
+
 export const Ul = styled.ul<INav>`
   list-style: none;
   display: flex;
@@ -12,6 +31,7 @@ export const Ul = styled.ul<INav>`
   justify-content: flex-end;
   align-items: center;
   font-size: 18px;
+  font-weight: 500;
 
   a {
     text-decoration: none;
@@ -20,12 +40,12 @@ export const Ul = styled.ul<INav>`
     cursor: pointer;
 
     &:hover {
-      color: #0DADEA;
+      color: #FFE194;
     }
   }
 
   li {
-    padding: 18px 10px;
+    margin-right: 2em;
   }
 
   @media (max-width: 768px) {
@@ -47,26 +67,10 @@ export const Ul = styled.ul<INav>`
       margin-right: 34px;
 
       &:hover {
-        color: #0DADEA;
+        color: #FFE194;
       }
     }
   }
-`
-export const Logo = styled.h1`
-    color: black;
-    text-decoration: none !important;
-    font-size: 1.5rem;
-    font-weight: 10000;
-    font-family: 'Trebuchet MS';
-
-    //fiks font senere
-`
-
-export const Flexcontainer = styled.div`
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  height: 10vh;
 `
 
 export const Burger = styled.div<INav>`
@@ -104,47 +108,46 @@ export const Burger = styled.div<INav>`
   }
 `
 
-/* Footer 1 */
-
-export const Ocean = styled.div`
-  height: 5%;
+/* Footer */
+export const Ocean = styled.footer`
+  height: 4.5rem;
   width: 100%;
-  position: absolute;
-  bottom: 0;
-  left: 0;
   background: #FFE194;
+  grid-row-start: 2;
+  grid-row-end: 3;
 `
 
-export const Wave = styled.div` 
-  background: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/756881/wavePurple.svg) repeat-x;  
-  background-image: url(${image});
+export const Wave = styled.div`
+  @media (min-height: 700px) and (min-width: 1200px) {
+    background-image: url(${image});
+    position: absolute;
+    bottom: -10px;
+    width: 6400px;
+    height: 198px;
+    animation: wave 12s cubic-bezier(0.36, 0.45, 0.63, 0.53) infinite, swell 8s ease -1.25s infinite;;
+    transform: translate3d(0, 0, 0);
 
-  
-  position: absolute;
-  bottom: -10px;
-  width: 6400px;
-  height: 198px;
-  animation: wave 12s cubic-bezier(0.36, 0.45, 0.63, 0.53) infinite, swell 8s ease -1.25s infinite;;
-  transform: translate3d(0, 0, 0);
+    @keyframes wave {
+      0% {
+        margin-left: 0;
+      }
+      100% {
+        margin-left: -1600px;
+      }
+    }
+    @keyframes swell {
+      0%,
+      100% {
+        transform: translate3d(0, -40px, 0);
+      }
+      50% {
+        transform: translate3d(0, -10px, 0);
+      }
+    }
+    .endWave{
+      display: none;
+    }
+  }
 
-  @keyframes wave {
-    0% {
-      margin-left: 0;
-    }
-    100% {
-      margin-left: -1600px;
-    }
-  }
-  @keyframes swell {
-    0%,
-    100% {
-      transform: translate3d(0, -40px, 0);
-    }
-    50% {
-      transform: translate3d(0, -10px, 0);
-    }
-  }
-  .endWave{
-    display: none;
-  }
+
 `

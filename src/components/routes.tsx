@@ -4,26 +4,33 @@ import Home from '../pages/Home'
 import Cv from '../pages/Cv'
 import About from '../pages/About'
 import Projects from '../pages/Projects'
-import Burger from './Burger'
+import Layout from './Layout'
 
 const Routes: React.FC = () => (
   <Router>
     <Switch>
       <Route exact path={'/'}>
-        <Burger/>
-        <Home />
+        <Layout>
+          <Home />
+        </Layout>
       </Route>
+
       <Route exact path={'/about'}>
-      <Burger/>
-        <About />
+        <Layout>
+          <About />
+        </Layout>
+
       </Route>
       <Route exact path={'/cv'}>
-      <Burger/>
-        <Cv />
+        <Layout>
+          <Cv />
+        </Layout>
+
       </Route>
       <Route exact path={'/projects'}>
-      <Burger/>
-        <Projects />
+        <Layout>
+          <Projects />
+        </Layout>
       </Route>
     </Switch>
   </Router>

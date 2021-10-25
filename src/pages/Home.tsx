@@ -5,23 +5,24 @@ import pic from '../assets/profilepic.png'
 import linkedin from '../assets/linkedIn_circle.svg'
 import github from '../assets/github.svg'
 import instagram from '../assets/instagram.svg'
-import Footer from '../components/Footer'
 
 const Home = () => {
   return (
 
       <S.MainContainer>
-         <S.GlobalStyle/>
+         {/* <S.GlobalStyle/> */}
 
             <S.AboutContainer>
               <div className = "textContainer">
-                <h1>Camilla Dybdal</h1>
-                <p>Passionate student with an above average interest in innovation and learning new technologies.
+                <h1>Hi! I'm Camilla Dybdal</h1>
+                <p>Welcome to my portfolio page!
                 <br/><br/>
-                Skilled in C, C++, Python and Go. Currently studying Cybernetics and Robotics at the Norwegian
-                University of Science and Technology (NTNU).Passionate student with an above average interest in innovation and learning new technologies.
-                Passionate student with an above average interest in innovation and learning new technologies.
-                Passionate student with an above average interest in innovation and learning new technologies.
+                  I’m a passionate student with an above average
+                   interest in innovation and learning new technologies.
+                   I’m currently on my 4th year of an integrated
+                   masters degree in Cybernetics and Robotics at NTNU.
+                   I am particularly interested in machine learning,
+                   autonomous systems and blockchain technology.
                 </p>
               </div>
               <div className = "socialMediaContainer">
@@ -40,7 +41,6 @@ const Home = () => {
             <S.ImageContainer>
               <img src = {pic} ></img>
             </S.ImageContainer>
-            <Footer/>
 
         </S.MainContainer>
 

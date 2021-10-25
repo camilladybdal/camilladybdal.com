@@ -20,7 +20,7 @@ const Navbar = (props: Props) => {
           <NavLink to="/about"
             activeStyle={{
               fontWeight: 'bold',
-              color: '#0DADEA'
+              color: '#FFE194'
             }}
           >
             <li> About </li>
@@ -28,7 +28,7 @@ const Navbar = (props: Props) => {
           <NavLink to="/projects"
             activeStyle={{
               fontWeight: 'bold',
-              color: '#0DADEA'
+              color: '#FFE194'
             }}
           >
             <li>Projects</li>
@@ -36,7 +36,7 @@ const Navbar = (props: Props) => {
           <NavLink to="/cv"
             activeStyle={{
               fontWeight: 'bold',
-              color: '#0DADEA'
+              color: '#FFE194'
             }}
           >
             <li>CV</li>

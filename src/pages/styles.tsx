@@ -1,21 +1,16 @@
-import styled, { createGlobalStyle } from 'styled-components'
+import styled from 'styled-components'
 
-export const GlobalStyle = createGlobalStyle`
-  body {
-    overflow: hidden;
-  }
-`
+/* Home */
 
 export const MainContainer = styled.div`
     display: grid;
     grid-template-columns: repeat(2,minmax(0,1fr));
     column-gap: 1rem;
     align-items: center;
-    height: 100%;
 
-    margin-top: 8rem;
     margin-left: 8rem;
     margin-right: 8rem;
+    margin-bottom: 8rem;
 
     @media (max-width: 1065px) {
         display: flex;
@@ -23,8 +18,8 @@ export const MainContainer = styled.div`
         justify-content: space-evenly;
 
         margin-top: 2rem;
-        margin-left: 4rem;
-        margin-right: 4rem;
+        margin-left: 6rem;
+        margin-right: 6rem;
     }
 `
 
@@ -51,8 +46,15 @@ export const AboutContainer = styled.div`
 
             margin-block-start: 0;
             margin-block-end: 0;
-            margin-inline-start: 0px;
-            margin-inline-end: 0px;
+            margin-inline-start: 0;
+            margin-inline-end: 0;
+        }
+        @media (max-width: 1065px) {
+
+            h1{
+                text-align: center;
+                font-size: 2.5em;
+            }
         }
     }
 
@@ -66,11 +68,17 @@ export const AboutContainer = styled.div`
     }
 
     @media (max-width: 1065px) {
-        // some style here => text is too large
+        .socialMediaContainer{
+            justify-content: center;
+        }
+        img{
+            width: 4em;
+        }
     }
 `
 
 export const ImageContainer = styled.div`
+    padding-bottom: 2em;
 
     img{
         display: block;
@@ -84,9 +92,9 @@ export const ImageContainer = styled.div`
         border-color: #FFE194;
     }
 
-    @media (max-width: 750px) {
+    @media (max-width: 1066px) {
         img{
-            width: 20rem;
+            width: 18rem;
         }
     }
 
