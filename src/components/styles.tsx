@@ -20,7 +20,6 @@ export const Flexcontainer = styled.div`
   display: flex;
   justify-content: space-between;
   align-items: center;
-  height: 5vh;
   padding: 1em 1em 1em 1.5em;
 `
 
@@ -50,24 +49,28 @@ export const Ul = styled.ul<INav>`
 
   @media (max-width: 768px) {
     flex-flow: column nowrap;
-    background-color: #fdfdfdfa;
-    position: fixed;
+    background-color: rgb(255, 225, 148, 0.98);
+
     transform: ${(props) => props.open ? 'translateX(0)' : 'translateX(100%)'};
-    top: -16px;
+   
+    position: fixed;
     right: 0;
+    bottom: 0;
     height: 100%;
-    width: 180px;
-    padding-top: 3.5rem;
+    width: 100%;
+
     transition: transform 0.3s ease-in-out;
     z-index: 9;
-    justify-content: normal;
+    justify-content: center;
+    
     
     li {
       color: #000;
-      margin-right: 34px;
+      margin-top: 3em;
+      font-weight: bold;
 
       &:hover {
-        color: #FFE194;
+        color: rgba(253, 253, 253);
       }
     }
   }

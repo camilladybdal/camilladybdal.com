@@ -10,7 +10,7 @@ export const MainContainer = styled.div`
 
     margin-left: 8rem;
     margin-right: 8rem;
-    margin-bottom: 8rem;
+    /* margin-bottom: 8rem; */
 
     @media (max-width: 1065px) {
         display: flex;
@@ -24,6 +24,7 @@ export const MainContainer = styled.div`
 `
 
 export const AboutContainer = styled.div`
+    padding-bottom: 4rem;
 
     .textContainer{
         @import url('https://fonts.googleapis.com/css2?family=Akronim&family=Allerta&family=Karla&display=swap');
@@ -78,7 +79,7 @@ export const AboutContainer = styled.div`
 `
 
 export const ImageContainer = styled.div`
-    padding-bottom: 2em;
+    padding-bottom: 4rem;
 
     img{
         display: block;
@@ -93,6 +94,8 @@ export const ImageContainer = styled.div`
     }
 
     @media (max-width: 1066px) {
+        padding-bottom: 2rem;
+
         img{
             width: 18rem;
         }

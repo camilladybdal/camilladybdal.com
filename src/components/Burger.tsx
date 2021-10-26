@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import * as S from './styles'
-import Navbar from './Navbar'
+import { NavLink } from 'react-router-dom'
 
 const Burger = () => {
   const [open, setOpen] = useState(false)
@@ -12,7 +12,52 @@ const Burger = () => {
         <div />
         <div />
       </S.Burger>
-      <Navbar open={open} />
+
+      <S.Flexcontainer >
+
+        <NavLink to="/" style={{ textDecoration: 'none' }}>
+          <S.Logo>&lt; Dybdal /&gt;</S.Logo>
+        </NavLink>
+
+        <S.Ul open={open}>
+
+          <NavLink to="/about"
+            activeStyle={{
+              fontWeight: 'bold',
+              color: '#FFE194'
+            }}
+            onClick = {() => {
+              setOpen(false)
+            }}
+          >
+            <li> About </li>
+
+          </NavLink>
+          <NavLink to="/projects"
+            activeStyle={{
+              fontWeight: 'bold',
+              color: '#FFE194'
+            }}
+            onClick = {() => {
+              setOpen(false)
+            }}
+          >
+            <li>Projects</li>
+          </NavLink>
+          <NavLink to="/cv"
+            activeStyle={{
+              fontWeight: 'bold',
+              color: '#FFE194'
+            }}
+            onClick = {() => {
+              setOpen(false)
+            }}
+          >
+            <li>CV</li>
+          </NavLink>
+
+        </S.Ul>
+    </S.Flexcontainer>
     </>
   )
 }

@@ -18,7 +18,7 @@ const FullFlex = styled.div`
 const Layout: React.FC = ({ children }) => {
   return (
         <LayoutComp>
-            <Burger />
+            <Burger/>
 
             <FullFlex>
                 {children}
