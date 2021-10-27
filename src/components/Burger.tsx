@@ -21,7 +21,7 @@ const Burger = () => {
 
         <S.Ul open={open}>
 
-          <NavLink to="/about"
+          <NavLink to="/home"
             activeStyle={{
               fontWeight: 'bold',
               color: '#FFE194'
@@ -30,7 +30,7 @@ const Burger = () => {
               setOpen(false)
             }}
           >
-            <li> About </li>
+            <li> Home </li>
 
           </NavLink>
           <NavLink to="/projects"

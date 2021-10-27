@@ -10,6 +10,7 @@ export const MainContainer = styled.div`
 
     margin-left: 8rem;
     margin-right: 8rem;
+    margin-bottom: 8rem;
     /* margin-bottom: 8rem; */
 
     @media (max-width: 1065px) {

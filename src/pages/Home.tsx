@@ -37,7 +37,6 @@ const Home = () => {
                 </a>
               </div>
             </S.AboutContainer>
-
             <S.ImageContainer>
               <img src = {pic} ></img>
             </S.ImageContainer>

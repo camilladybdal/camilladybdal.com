@@ -50,7 +50,6 @@ export const Ul = styled.ul<INav>`
   @media (max-width: 768px) {
     flex-flow: column nowrap;
     background-color: rgb(255, 225, 148, 0.98);
-
     transform: ${(props) => props.open ? 'translateX(0)' : 'translateX(100%)'};
    
     position: fixed;
@@ -58,6 +57,7 @@ export const Ul = styled.ul<INav>`
     bottom: 0;
     height: 100%;
     width: 100%;
+    margin-bottom: 0;
 
     transition: transform 0.3s ease-in-out;
     z-index: 9;
