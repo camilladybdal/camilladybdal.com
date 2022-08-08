@@ -8,28 +8,27 @@ import instagram from '../assets/instagram.svg'
 
 const Home = () => {
   return (
-
       <S.MainContainer>
-         {/* <S.GlobalStyle/> */}
-
             <S.AboutContainer>
               <div className = "textContainer">
-                <h1>Hi! I'm Camilla Dybdal</h1>
+                <h1>Camilla Dybdal</h1>
+                <h2> Cybernetics and robotics student and Data Scientist</h2>
                 <p>Welcome to my portfolio page!
-                <br/><br/>
-                  I’m a passionate student with an above average
+                <br/>
+                  I'm a passionate student with an above average
                    interest in innovation and learning new technologies.
-                   I’m currently on my 4th year of an integrated
-                   masters degree in Cybernetics and Robotics at NTNU.
-                   I am particularly interested in machine learning,
-                   autonomous systems and blockchain technology.
+                   I'm currently starting my 5th and final year of an integrated
+                   masters degree in Cybernetics and Robotics at NTNU. Apart from studying,
+                   I work part-time as an Atonomy Engineer at Clean Sea Solutions, where I am developing
+                   a vision-system for their ocean drone. I also have experience from past internships and
+                   personal projects.
                 </p>
               </div>
               <div className = "socialMediaContainer">
                 <a href = "https://www.linkedin.com/in/camilladybdal">
                 <img src ={linkedin} ></img>
                 </a>
-                <a href = "https://github.com/camzillaD">
+                <a href = "https://github.com/camilladybdal">
                 <img src ={github} ></img>
                 </a>
                 <a href = "https://www.instagram.com/camildy/">
@@ -42,7 +41,6 @@ const Home = () => {
             </S.ImageContainer>
 
         </S.MainContainer>
-
   )
 }
 

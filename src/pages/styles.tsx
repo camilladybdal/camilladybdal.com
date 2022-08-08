@@ -22,14 +22,15 @@ export const MainContainer = styled.div`
         margin-left: 6rem;
         margin-right: 6rem;
     }
+
 `
 
 export const AboutContainer = styled.div`
     padding-bottom: 4rem;
 
     .textContainer{
-        @import url('https://fonts.googleapis.com/css2?family=Akronim&family=Allerta&family=Karla&display=swap');
-        font-family: 'Karla', sans-serif;
+        font-family: 'M PLUS Rounded 1c', sans-serif;
+        
 
         h1{
             display: block;

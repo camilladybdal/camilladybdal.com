@@ -11,6 +11,8 @@ import dybdal from '../assets/dybdal.png'
 import byggern from '../assets/byggern2.png'
 import bj from '../assets/bj.png'
 import tensorflow from '../assets/tensorflow.png'
+import { NavLink } from 'react-router-dom'
+import gren from '../assets/gren.png'
 
 const Project = styled.div`
     display: flex;
@@ -40,7 +42,7 @@ const Project = styled.div`
         color: grey;
         margin: 1rem;
     }
-    button{
+    li{
         background-color:#FFE194;
         color: white;
         padding: 15px 32px;
@@ -54,6 +56,7 @@ const Project = styled.div`
 const FlexWrapper = styled.div`
     margin-top: 2em;
     margin-bottom: 2em;
+    font-family: 'M PLUS Rounded 1c', sans-serif;
     
     display: flex;
     width: 100%;
@@ -69,6 +72,8 @@ const TextWrapper = styled.div`
     align-items: center;
     justify-content: center;
     flex-direction: column;
+    font-family: 'M PLUS Rounded 1c', sans-serif;
+
     p {
       text-align: center;
     }
@@ -95,9 +100,13 @@ const Projects = () => {
             <p> Currently working on a research project with Solution Seeker and NTNU,
               on developing and testing new methods for Machine Learning based on industrial time-series.
               <br></br><br></br>
-              <b>PyTorch</b> | <b> Python </b>
+              <b>PyTorch</b> | <b> Python </b> | <b> Dash </b>
             </p>
-            <button> Read more </button>
+
+            <NavLink to="projects/solutionseeker">
+            <li>Read more</li>
+          </NavLink>
+
           </div>
         </Project>
         <Project>
@@ -111,7 +120,9 @@ const Projects = () => {
                 a summer internship at Cisco Norway. <br></br><br></br>
                 <b>Typescript</b> | <b>React</b> | <b>Redux</b> | <b>AWS</b>.
             </p>
-            <button> Read more </button>
+            <NavLink to="projects/cisco">
+            <li>Read more</li>
+          </NavLink>
           </div>
         </Project>
         <Project>
@@ -126,7 +137,9 @@ const Projects = () => {
               <br></br><br></br>
               <b>C++</b> | <b> openCV </b> | <b> Python</b> | <b>TensorFlow</b>
             </p>
-            <button> Read more </button>
+            <NavLink to="projects/mobai">
+            <li>Read more</li>
+          </NavLink>
           </div>
         </Project>
         <Project>
@@ -140,7 +153,9 @@ const Projects = () => {
               <b>Solidity</b> | <b> Hardhat </b> | <b> Ethers</b> | <b>Polygon</b>
               <b> Infura</b> | <b>IPFS</b> | <b>Typescript</b> | <b>React</b>
             </p>
-            <button> Read more </button>
+            <NavLink to="projects/nft">
+            <li>Read more</li>
+          </NavLink>
           </div>
         </Project>
         <Project>
@@ -153,7 +168,9 @@ const Projects = () => {
               <br></br><br></br>
               <b>Typescript</b> | <b> React </b>
             </p>
-            <button> Read more </button>
+            <NavLink to="projects/portefolio">
+            <li>Read more</li>
+          </NavLink>
           </div>
         </Project>
         <Project>
@@ -166,7 +183,9 @@ const Projects = () => {
               <br></br><br></br>
               <b>Webflow</b> | <b> Adobe Illustrator </b>
             </p>
-            <button> Read more </button>
+            <NavLink to="projects/ivaretatt">
+            <li>Read more</li>
+          </NavLink>
           </div>
         </Project>
         <Project>
@@ -180,7 +199,9 @@ const Projects = () => {
               <br></br><br></br>
               <b>C</b> | <b> Arduino </b>
             </p>
-            <button> Read more </button>
+            <NavLink to="projects/byggern">
+            <li>Read more</li>
+          </NavLink>
           </div>
         </Project>
         <Project>
@@ -193,7 +214,9 @@ const Projects = () => {
               <br></br><br></br>
               <b>Python</b> | <b> Tensorflow </b>
             </p>
-            <button> Read more </button>
+            <NavLink to="projects/blackjack">
+            <li>Read more</li>
+          </NavLink>
           </div>
         </Project>
         <Project>
@@ -206,7 +229,9 @@ const Projects = () => {
               <br></br><br></br>
               <b>Python</b> | <b> Keras/Tensorflow </b>
             </p>
-            <button> Read more </button>
+            <NavLink to="projects/translator">
+            <li>Read more</li>
+          </NavLink>
           </div>
         </Project>
         <Project>
@@ -220,7 +245,9 @@ const Projects = () => {
               <br></br><br></br>
               <b>Go</b> | <b> UDP </b>
             </p>
-            <button> Read more </button>
+            <NavLink to="projects/realtime">
+            <li>Read more</li>
+          </NavLink>
           </div>
         </Project>
         <Project>
@@ -233,9 +260,28 @@ const Projects = () => {
               <br></br><br></br>
               <b>C</b> | <b> ROS </b> | <b> RVIZ </b> | <b> SLAM </b>
             </p>
-            <button> Read more </button>
+            <NavLink to="projects/cleaningrobot">
+            <li>Read more</li>
+          </NavLink>
           </div>
         </Project>
+
+        <Project>
+          <div>
+            <img src={gren} />
+          </div>
+          <div>
+            <h2> GrEn </h2>
+            <p> I was project manager for Start NTNUs GrEn in 2020.
+              <br></br><br></br>
+              <b> Poeple skills</b> | <b> Teamwork </b> | <b> Communication </b>
+            </p>
+            <NavLink to="projects/gren">
+            <li>Read more</li>
+          </NavLink>
+          </div>
+        </Project>
+
     </FlexWrapper>
     </div>
   )

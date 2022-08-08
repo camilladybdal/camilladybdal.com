@@ -63,6 +63,7 @@
     "eslint-plugin-node": "^11.1.0",
     "eslint-plugin-promise": "^5.1.0",
     "eslint-plugin-react": "^7.25.2",
+    "gulp-useref": "^5.0.0",
     "tslint-config-prettier": "^1.18.0"
   }
 }

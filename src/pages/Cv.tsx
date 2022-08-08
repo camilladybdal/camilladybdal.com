@@ -9,9 +9,21 @@ const MainWrapper = styled.div`
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  min-width: 100%;
+  width: 100%;
+  overflow: hidden;
   padding-bottom: 2rem;
+  font-family: 'M PLUS Rounded 1c', sans-serif;
+
+  .react-pdf__Page__canvas {
+    width: 35em !important;
+    height: auto !important;
+    @media (max-width: 620px) {
+      width: 20em !important;
+    }
+}
+
 `
+
 const InfoBox = styled.div`
   margin-bottom: 1rem;
   text-align: center;
@@ -27,7 +39,7 @@ const InfoBox = styled.div`
 
 const MyDoc = (
   <Document file={cv}>
-    <Page pageNumber={1} />
+    <Page pageNumber={1}/>
   </Document>
 )
 
@@ -48,13 +60,12 @@ const Cv: React.FC = () => {
                     <a href={cv} target="_blank" rel="noreferrer"> here </a>
                   )}
               </BlobProvider>
-
               to open the pdf in a separate window.
               </p>
         </InfoBox>
 
           <Document file={cv}>
-              <Page pageNumber={1} />
+              <Page pageNumber={1}/>
           </Document>
 
       </MainWrapper>
