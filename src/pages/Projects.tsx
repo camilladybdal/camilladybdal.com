@@ -51,6 +51,12 @@ const Project = styled.div`
         display: inline-block;
         font-size: 1em;
     }
+    @media (max-width: 900px) {
+        img {
+          height: 5rem;
+      }
+
+    }
 `
 
 const FlexWrapper = styled.div`

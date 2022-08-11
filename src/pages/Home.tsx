@@ -5,9 +5,18 @@ import pic from '../assets/profilepic.png'
 import linkedin from '../assets/linkedIn_circle.svg'
 import github from '../assets/github.svg'
 import instagram from '../assets/instagram.svg'
+import styled from 'styled-components'
+
+const Container = styled.div`
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+`
 
 const Home = () => {
   return (
+    <Container>
       <S.MainContainer>
             <S.AboutContainer>
               <div className = "textContainer">
@@ -41,6 +50,7 @@ const Home = () => {
             </S.ImageContainer>
 
         </S.MainContainer>
+      </Container>
   )
 }
 
