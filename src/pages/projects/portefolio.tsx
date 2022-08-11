@@ -12,10 +12,10 @@ export const ImageWrapper = styled.div`
     img{
         height: 20em;
     }
-    @media (max-width: 730px) {
+    @media (max-width: 900px) {
         img{
-            height: 20em;
-        }
+            width: 500px;
+            height: auto;        }
     }
 
     @media (max-width: 390px) { // mobile

@@ -14,7 +14,7 @@ const Byggern = () => {
                     <h1> Russian Translator </h1>
                     <p>
                     When I started working on this project, I had a clear goal to create a witty deep-learning chatbot,
-                    using the Transformer model proposed in the paper "Attention is all you need", which is
+                    using the Transformer model proposed in the paper <a href = "https://arxiv.org/abs/1706.03762?context=cs"> "Attention is all you need"</a>, which is
                     known as state of the art within Natural language Generation (NLG). This, however,
                     turned out to be difficult as the chatbot showed very poor results, and I then
                     proceeded to create a translator between Russian and English, using the same model.

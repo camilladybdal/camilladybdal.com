@@ -1,6 +1,6 @@
 import React from 'react'
 import { Document, Page } from 'react-pdf/dist/esm/entry.webpack'
-import cv from '../assets/cv.pdf'
+import cv from '../assets/cv_f22.pdf'
 import styled from 'styled-components'
 import { BlobProvider } from '@react-pdf/renderer'
 
@@ -21,7 +21,6 @@ const MainWrapper = styled.div`
       width: 20em !important;
     }
 }
-
 `
 
 const InfoBox = styled.div`
@@ -67,7 +66,6 @@ const Cv: React.FC = () => {
           <Document file={cv}>
               <Page pageNumber={1}/>
           </Document>
-
       </MainWrapper>
   )
 }
