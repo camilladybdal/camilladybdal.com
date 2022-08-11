@@ -60,7 +60,7 @@ const NFT = () => {
 
                     <br></br><br></br>
 
-                    The project has't been published yet. If you are interested in more details, feel free to take a peak at the project at <a href = "https://github.com/camilladybdal/nft-market"> github. </a>
+                    The project has't been published yet. If you are interested in more details, feel free to take a peek at the project at <a href = "https://github.com/camilladybdal/nft-market"> github. </a>
 
                     </p>
                 </S.TextWrapper>

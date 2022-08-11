@@ -14,7 +14,7 @@ const Cisco = () => {
                     <h1> Cisco Webboard Solution </h1>
                     <p>
                     In my summer internship in 2021, I got the opportunity to work for 9 weeks on a web-based whiteboard solution for Cisco Webex.
-                    We started the project from scratch to create a collaboration tool, which, unlike their present-time tool, wouldn't be
+                    We started the project from scratch to create a collaboration tool, which, unlike their present tool, wouldn't be
                     too much based on drawing but instead on features like flow charts, sticky notes, and reactions.
 
                     <br></br> <br></br>
@@ -28,7 +28,7 @@ const Cisco = () => {
                     <br></br> <br></br>
 
                     This project was meant to be a proof of concept for Cisco. I am glad to see that even though Cisco ended
-                    up using Miro (a solution much like the one we implemented), the summer interns of 2022 are continuing our work.
+                    up using Miro (who has a similar solution to the one we implemented), the summer interns of 2022 are continuing our work.
                     You can read more about Cisco webex
                     <a href = "https://www.webex.com/"> here. </a>
 

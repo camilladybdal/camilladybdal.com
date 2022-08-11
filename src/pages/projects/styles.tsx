@@ -6,6 +6,7 @@ export const MainWrapper = styled.div`
     align-items: center;
     width: 100%;
     font-family: 'M PLUS Rounded 1c', sans-serif;
+    overflow: hidden;
 `
 
 export const TextWrapper = styled.div`

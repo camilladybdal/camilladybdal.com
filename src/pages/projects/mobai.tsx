@@ -34,7 +34,7 @@ const Mobai = () => {
                     facial recognition, and eventually a classification of morph or not morph.
 
                     <br></br><br></br>
-                    Technologies used include Python, C++, TensorFlow, LibSVM, and OpenCV.
+                    Technologies used include Python, C++, TensorFlow and OpenCV.
 
                     </p>
                 </S.TextWrapper>
