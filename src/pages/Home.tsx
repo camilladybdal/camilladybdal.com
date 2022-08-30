@@ -28,7 +28,7 @@ const Home = () => {
                    interest in innovation and learning new technologies.
                    I'm currently starting my 5th and final year of an integrated
                    masters degree in Cybernetics and Robotics at NTNU. Apart from studying,
-                   I work part-time as an Atonomy Engineer at Clean Sea Solutions, where I am developing
+                   I work part-time as an Autonomy Engineer at Clean Sea Solutions, where I am developing
                    a vision-system for their ocean drone. I also have experience from past internships and
                    personal projects.
                 </p>

@@ -4,7 +4,6 @@ import Home from '../pages/Home'
 import Cv from '../pages/Cv'
 // import About from '../pages/About'
 import Projects from '../pages/Projects'
-import LayoutWave from './LayoutWave'
 import Layout from './Layout'
 import SolutionSeeker from '../pages/projects/solutionseeker'
 import Cisco from '../pages/projects/cisco'
@@ -23,15 +22,15 @@ const Routes: React.FC = () => (
   <Router>
     <Switch>
       <Route exact path={'/'}>
-       <LayoutWave>
+       <Layout>
           <Home />
-        </LayoutWave>
+        </Layout>
       </Route>
 
       <Route exact path={'/Home'}>
-        <LayoutWave>
+        <Layout>
           <Home />
-        </LayoutWave>
+        </Layout>
 
       </Route>
       <Route exact path={'/cv'}>

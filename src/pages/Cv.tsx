@@ -1,6 +1,6 @@
 import React from 'react'
 import { Document, Page } from 'react-pdf/dist/esm/entry.webpack'
-import cv from '../assets/cv_f22.pdf'
+import cv from '../assets/cv_aug2022.pdf'
 import styled from 'styled-components'
 import { BlobProvider } from '@react-pdf/renderer'
 

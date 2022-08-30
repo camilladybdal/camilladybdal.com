@@ -15,7 +15,7 @@ export const TextWrapper = styled.div`
     text-align: left;
     margin-top: 2rem;
     margin-bottom: 2rem;
-    width: 50%;
+    width: 70%;
 
     h1{
         text-align: center;
