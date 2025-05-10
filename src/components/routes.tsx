@@ -17,109 +17,85 @@ import Translator from '../pages/projects/translator'
 import Realtime from '../pages/projects/realtime'
 import Cleaningrobot from '../pages/projects/cleaningrobot'
 import Gren from '../pages/projects/gren'
+import CleanSeaSolutions from '../pages/projects/cleanseasolutions'
+import Resolve from '../pages/projects/resolve'
 
 const Routes: React.FC = () => (
   <Router>
-    <Switch>
-      <Route exact path={'/'}>
-       <Layout>
+    <Layout>
+      <Switch>
+        <Route exact path={'/'}>
           <Home />
-        </Layout>
-      </Route>
+        </Route>
 
-      <Route exact path={'/Home'}>
-        <Layout>
+        <Route exact path={'/Home'}>
           <Home />
-        </Layout>
-
-      </Route>
-      <Route exact path={'/cv'}>
-        <Layout>
+        </Route>
+        <Route exact path={'/cv'}>
           <Cv />
-        </Layout>
-
-      </Route>
-      <Route exact path={'/projects'}>
-        <Layout>
+        </Route>
+        <Route exact path={'/projects'}>
           <Projects />
-          </Layout>
-      </Route>
+        </Route>
 
-      <Route exact path={'/projects/solutionseeker'}>
-        <Layout>
+        <Route exact path={'/projects/solutionseeker'}>
           <SolutionSeeker />
-          </Layout>
-      </Route>
+        </Route>
 
-      <Route exact path={'/projects/cisco'}>
-        <Layout>
+        <Route exact path={'/projects/cisco'}>
           <Cisco />
-          </Layout>
-      </Route>
+        </Route>
 
-      <Route exact path={'/projects/mobai'}>
-        <Layout>
+        <Route exact path={'/projects/mobai'}>
           <Mobai />
-          </Layout>
-      </Route>
+        </Route>
 
-      <Route exact path={'/projects/nft'}>
-        <Layout>
+        <Route exact path={'/projects/nft'}>
           <NFT />
-          </Layout>
-      </Route>
+        </Route>
 
-      <Route exact path={'/projects/portefolio'}>
-        <Layout>
+        <Route exact path={'/projects/portefolio'}>
           <Portefolio />
-          </Layout>
-      </Route>
+        </Route>
 
-      <Route exact path={'/projects/ivaretatt'}>
-        <Layout>
+        <Route exact path={'/projects/ivaretatt'}>
           <Ivaretatt />
-          </Layout>
-      </Route>
+        </Route>
 
-      <Route exact path={'/projects/byggern'}>
-        <Layout>
+        <Route exact path={'/projects/byggern'}>
           <Byggern />
-          </Layout>
-      </Route>
+        </Route>
 
-      <Route exact path={'/projects/blackjack'}>
-        <Layout>
+        <Route exact path={'/projects/blackjack'}>
           <Blackjack />
-          </Layout>
-      </Route>
+        </Route>
 
-      <Route exact path={'/projects/translator'}>
-        <Layout>
+        <Route exact path={'/projects/translator'}>
           <Translator />
-        </Layout>
-      </Route>
+        </Route>
 
-      <Route exact path={'/projects/realtime'}>
-        <Layout>
+        <Route exact path={'/projects/realtime'}>
           <Realtime />
-        </Layout>
-      </Route>
+        </Route>
 
-      <Route exact path={'/projects/cleaningrobot'}>
-        <Layout>
+        <Route exact path={'/projects/cleaningrobot'}>
           <Cleaningrobot />
-        </Layout>
-      </Route>
+        </Route>
 
-      <Route exact path={'/projects/gren'}>
-        <Layout>
+        <Route exact path={'/projects/gren'}>
           <Gren />
-        </Layout>
-      </Route>
+        </Route>
 
-    </Switch>
+        <Route exact path={'/projects/cleanseasolutions'}>
+          <CleanSeaSolutions />
+        </Route>
+
+        <Route exact path={'/projects/resolve'}>
+          <Resolve />
+        </Route>
+      </Switch>
+    </Layout>
   </Router>
-
 )
 
 export default Routes

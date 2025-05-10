@@ -1,6 +1,6 @@
 import React from 'react'
 import { Document, Page } from 'react-pdf/dist/esm/entry.webpack'
-import cv from '../assets/cv_aug2022.pdf'
+import cv from '../assets/cv.pdf'
 import styled from 'styled-components'
 import { BlobProvider } from '@react-pdf/renderer'
 
@@ -38,35 +38,35 @@ const InfoBox = styled.div`
 
 const MyDoc = (
   <Document file={cv}>
-    <Page pageNumber={1}/>
+    <Page pageNumber={1} />
   </Document>
 )
 
 const Cv: React.FC = () => {
   return (
     <MainWrapper>
-        <InfoBox>
-            <h1>My Resume</h1>
-            <p> Have a look at my resume!
-              A more detailed resume with references and attests can be sent upon request.
-              <br/><br/>
-              Click
-              <a href = "https://www.linkedin.com/in/camilladybdal"> here </a>
-               to go to my linkedIn, and
+      <InfoBox>
+        <h1>My Resume</h1>
+        <p> Have a look at my resume!
+          A more detailed resume with references and attests can be sent upon request.
+          <br /><br />
+          Click
+          <a href="https://www.linkedin.com/in/camilladybdal"> here </a>
+          to go to my linkedIn, and
 
-               <BlobProvider document={MyDoc}>
-                  {({ url }) => (
-                    <a href={cv} target="_blank" rel="noreferrer"> here </a>
-                  )}
-              </BlobProvider>
-              to open the pdf in a separate window.
-              </p>
-        </InfoBox>
+          <BlobProvider document={MyDoc}>
+            {({ url }) => (
+              <a href={cv} target="_blank" rel="noreferrer"> here </a>
+            )}
+          </BlobProvider>
+          to open the pdf in a separate window.
+        </p>
+      </InfoBox>
 
-          <Document file={cv}>
-              <Page pageNumber={1}/>
-          </Document>
-      </MainWrapper>
+      <Document file={cv}>
+        <Page pageNumber={1} />
+      </Document>
+    </MainWrapper>
   )
 }
 

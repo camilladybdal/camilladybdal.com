@@ -18,39 +18,40 @@ const Home = () => {
   return (
     <Container>
       <S.MainContainer>
-            <S.AboutContainer>
-              <div className = "textContainer">
-                <h1>Camilla Dybdal</h1>
-                <h2> Cybernetics and robotics student and Data Scientist</h2>
-                <p>Welcome to my portfolio page!
-                <br/>
-                  I'm a passionate student with an above average
-                   interest in innovation and learning new technologies.
-                   I'm currently starting my 5th and final year of an integrated
-                   masters degree in Cybernetics and Robotics at NTNU. Apart from studying,
-                   I work part-time as an Autonomy Engineer at Clean Sea Solutions, where I am developing
-                   a vision-system for their ocean drone. I also have experience from past internships and
-                   personal projects.
-                </p>
-              </div>
-              <div className = "socialMediaContainer">
-                <a href = "https://www.linkedin.com/in/camilladybdal">
-                <img src ={linkedin} ></img>
-                </a>
-                <a href = "https://github.com/camilladybdal">
-                <img src ={github} ></img>
-                </a>
-                <a href = "https://www.instagram.com/camildy/">
-                <img src ={instagram} ></img>
-                </a>
-              </div>
-            </S.AboutContainer>
-            <S.ImageContainer>
-              <img src = {pic} ></img>
-            </S.ImageContainer>
+        <S.AboutContainer>
+          <div className="textContainer">
+            <h1>Camilla Dybdal</h1>
+            <h2>AI Tech Lead & Machine Learning Engineer </h2>
+            <p>
+              Welcome to my portfolio!
+              <br />
+              I'm passionate about developing intelligent systems that make a real-world impact, particularly through AI.
+              With a masters degree in Cybernetics and Robotics from NTNU and hands-on experience across industry and research, I enjoy building things that combine technical depth with creative problem-solving.
+              <br /><br />
+              I have experience leading AI initiatives and contributing to projects that span from autonomy and vision systems to applied machine learning in production environments.
+              <br /><br />
+              Feel free to explore my work and connect!
+            </p>
 
-        </S.MainContainer>
-      </Container>
+          </div>
+          <div className="socialMediaContainer">
+            <a href="https://www.linkedin.com/in/camilladybdal">
+              <img src={linkedin} ></img>
+            </a>
+            <a href="https://github.com/camilladybdal">
+              <img src={github} ></img>
+            </a>
+            <a href="https://www.instagram.com/camildy/">
+              <img src={instagram} ></img>
+            </a>
+          </div>
+        </S.AboutContainer>
+        <S.ImageContainer>
+          <img src={pic} ></img>
+        </S.ImageContainer>
+
+      </S.MainContainer>
+    </Container>
   )
 }
 

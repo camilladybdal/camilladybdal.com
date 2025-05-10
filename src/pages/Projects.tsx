@@ -13,6 +13,8 @@ import bj from '../assets/bj.png'
 import tensorflow from '../assets/tensorflow.png'
 import { NavLink } from 'react-router-dom'
 import gren from '../assets/gren.png'
+import cleansea from '../assets/clean_sea_logo.png'
+import resolve from '../assets/Logo_Resolve_color.png'
 
 const Project = styled.div`
     display: flex;
@@ -90,28 +92,61 @@ const Projects = () => {
   return (
     <div>
       <TextWrapper>
-      <h1>Projects</h1>
-      <p>Here you can find a selection of my projects! Some are school or hobby related, while others are from internships. <br></br>
-        Be sure to read more if you find them interesting!
-      </p>
+        <h1>Projects</h1>
+        <p> Here you&apos;ll find a selection of my projects — spanning professional work, academic contributions, and personal explorations. <br></br>
+          Be sure to read more if you find them interesting!
+        </p>
       </TextWrapper>
 
-    <FlexWrapper>
+      <FlexWrapper>
+        <Project>
+          <div>
+            <img src={resolve} style={{ maxWidth: '80%', height: 'auto' }} />
+          </div>
+          <div>
+            <h2>Visma Resolve | AI Tech Lead</h2>
+            <p>Leading the development of advanced AI solutions for payroll processing and validation.
+              <br></br><br></br>
+              | <b>Python</b> | <b>AWS</b>  <b>CICD</b> | <b>Docker</b>| <b>Github Actions</b>
+            </p>
+            <NavLink to="projects/resolve">
+              <li>Read more</li>
+            </NavLink>
+          </div>
+        </Project>
+
+      <Project>
+          <div>
+            <img src={cleansea} style={{ maxWidth: '60%', height: 'auto' }} />
+          </div>
+          <div>
+            <h2>Clean Sea Solutions</h2>
+            <p>Led the development of the vision system for an autonomous ocean cleanup drone.
+              Focused on creating robust computer vision solutions for marine debris detection and tracking.
+              <br></br><br></br>
+              <b>Computer Vision</b> | <b>Deep Learning</b> | <b>Autonomous Systems</b>
+            </p>
+            <NavLink to="projects/cleanseasolutions">
+              <li>Read more</li>
+            </NavLink>
+          </div>
+        </Project>
+
         <Project>
           <div>
             <img src={solution} />
           </div>
           <div>
             <h2> Solution Seeker | NTNU </h2>
-            <p> Currently working on a research project with Solution Seeker and NTNU,
+            <p> Research project with Solution Seeker and NTNU,
               on developing and testing new methods for Machine Learning based on industrial time-series.
               <br></br><br></br>
               <b>PyTorch</b> | <b> Python </b> | <b> Dash </b>
             </p>
 
             <NavLink to="projects/solutionseeker">
-            <li>Read more</li>
-          </NavLink>
+              <li>Read more</li>
+            </NavLink>
 
           </div>
         </Project>
@@ -122,13 +157,13 @@ const Projects = () => {
           <div>
             <h2> Cisco Webex </h2>
             <p> Design and development of a full-stack
-                web-based whiteboard application. This project was done as part of
-                a summer internship at Cisco Norway. <br></br><br></br>
-                <b>Typescript</b> | <b>React</b> | <b>Redux</b> | <b>AWS</b>.
+              web-based whiteboard application. This project was done as part of
+              a summer internship at Cisco Norway. <br></br><br></br>
+              <b>Typescript</b> | <b>React</b> | <b>Redux</b> | <b>AWS</b>.
             </p>
             <NavLink to="projects/cisco">
-            <li>Read more</li>
-          </NavLink>
+              <li>Read more</li>
+            </NavLink>
           </div>
         </Project>
         <Project>
@@ -144,8 +179,8 @@ const Projects = () => {
               <b>C++</b> | <b> openCV </b> | <b> Python</b> | <b>TensorFlow</b>
             </p>
             <NavLink to="projects/mobai">
-            <li>Read more</li>
-          </NavLink>
+              <li>Read more</li>
+            </NavLink>
           </div>
         </Project>
         <Project>
@@ -160,8 +195,8 @@ const Projects = () => {
               <b> Infura</b> | <b>IPFS</b> | <b>Typescript</b> | <b>React</b>
             </p>
             <NavLink to="projects/nft">
-            <li>Read more</li>
-          </NavLink>
+              <li>Read more</li>
+            </NavLink>
           </div>
         </Project>
         <Project>
@@ -175,8 +210,8 @@ const Projects = () => {
               <b>Typescript</b> | <b> React </b>
             </p>
             <NavLink to="projects/portefolio">
-            <li>Read more</li>
-          </NavLink>
+              <li>Read more</li>
+            </NavLink>
           </div>
         </Project>
         <Project>
@@ -190,8 +225,8 @@ const Projects = () => {
               <b>Webflow</b> | <b> Adobe Illustrator </b>
             </p>
             <NavLink to="projects/ivaretatt">
-            <li>Read more</li>
-          </NavLink>
+              <li>Read more</li>
+            </NavLink>
           </div>
         </Project>
         <Project>
@@ -206,8 +241,8 @@ const Projects = () => {
               <b>C</b> | <b> Arduino </b>
             </p>
             <NavLink to="projects/byggern">
-            <li>Read more</li>
-          </NavLink>
+              <li>Read more</li>
+            </NavLink>
           </div>
         </Project>
         <Project>
@@ -221,8 +256,8 @@ const Projects = () => {
               <b>Python</b> | <b> Tensorflow </b>
             </p>
             <NavLink to="projects/blackjack">
-            <li>Read more</li>
-          </NavLink>
+              <li>Read more</li>
+            </NavLink>
           </div>
         </Project>
         <Project>
@@ -236,8 +271,8 @@ const Projects = () => {
               <b>Python</b> | <b> Keras/Tensorflow </b>
             </p>
             <NavLink to="projects/translator">
-            <li>Read more</li>
-          </NavLink>
+              <li>Read more</li>
+            </NavLink>
           </div>
         </Project>
         <Project>
@@ -252,8 +287,8 @@ const Projects = () => {
               <b>Go</b> | <b> UDP </b>
             </p>
             <NavLink to="projects/realtime">
-            <li>Read more</li>
-          </NavLink>
+              <li>Read more</li>
+            </NavLink>
           </div>
         </Project>
         <Project>
@@ -267,8 +302,8 @@ const Projects = () => {
               <b>C</b> | <b> ROS </b> | <b> RVIZ </b> | <b> SLAM </b>
             </p>
             <NavLink to="projects/cleaningrobot">
-            <li>Read more</li>
-          </NavLink>
+              <li>Read more</li>
+            </NavLink>
           </div>
         </Project>
 
@@ -283,12 +318,11 @@ const Projects = () => {
               <b> Poeple skills</b> | <b> Teamwork </b> | <b> Communication </b>
             </p>
             <NavLink to="projects/gren">
-            <li>Read more</li>
-          </NavLink>
+              <li>Read more</li>
+            </NavLink>
           </div>
         </Project>
-
-    </FlexWrapper>
+      </FlexWrapper>
     </div>
   )
 }

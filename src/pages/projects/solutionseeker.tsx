@@ -5,59 +5,55 @@ import styled from 'styled-components'
 import * as S from './styles'
 
 const ImageWrapper = styled.div`
-    display: flex;
-    justify-content: center;
+  display: flex;
+  justify-content: center;
 
-    img{
-        height: 15em;
+  img {
+    height: 15em;
+  }
+
+  @media (max-width: 730px) {
+    img {
+      height: 20em;
     }
-    @media (max-width: 730px) {
-        img{
-            height: 20em;
-        }
+  }
+
+  @media (max-width: 390px) {
+    img {
+      width: 389px;
+      height: auto;
     }
-    
-    @media (max-width: 390px) { // mobile
-        img{
-            width: 389px;
-            height: auto;
-        }
-    }
+  }
 `
 
 const SolutionSeeker = () => {
   return (
-        <S.MainWrapper>
-                <ImageWrapper>
-                    <img src={placeholder} />
-                </ImageWrapper>
+    <S.MainWrapper>
+      <ImageWrapper>
+        <img src={placeholder} alt="Solution Seeker Project" />
+      </ImageWrapper>
 
-                <S.TextWrapper>
-                    {/* <h1> Solution Seeker </h1> */}
-                    <h3> Ongoing research project with NTNU and Solution Seeker on developing and testing new methods for Machine Learning based on Industrial data. </h3>
+      <S.TextWrapper>
+        <h3>
+          Collaborative research project with NTNU and Solution Seeker, focused on developing and evaluating new machine learning methods for industrial data.
+        </h3>
 
-                    <p>
-                    This summer I've been working on an exciting
-                    project with Solution Seeker and NTNU, where I've gotten
-                    the rare opportunity of taking a deep dive into deep neural networks
-                    and researching how to exploit their properties for different applications in
-                    the industry. I've spent time researching state-of-the-art architectures, as well as evaluating and testing them.
-                    <br></br><br></br>
-
-                    This experience was useful both in preparing me for my project and master
-                    thesis and for gaining experience on how it is to work as a researcher.
-                    I've read more articles this summer than I have in my entire life. By doing so,
-                    I've gained useful insights into how to assess and compare machine learning methods,
-                    and an overall better understanding of the statistics and mathematical formulations used in such methods.
-
-                    I am looking forward to writing my project thesis on the same subject, along with great supervisors from Solution Seeker and NTNU.
-                    You can read more about Solution Seeker
-                    <a href = "https://www.solutionseeker.no/"> here. </a>
-
-                    </p>
-                </S.TextWrapper>
-
-        </S.MainWrapper>
+        <p>
+          During the summer of 2022, I had the opportunity to work on an applied research project with Solution Seeker and NTNU.
+          The goal was to explore and test new machine learning techniques tailored to industrial time-series data.
+          <br /><br />
+          My work involved reviewing state-of-the-art deep learning architectures, training and evaluating models, and analyzing their performance
+          in real-world industrial scenarios. This experience gave me valuable hands-on exposure to advanced machine learning concepts
+          and the practical considerations of applying them in a research setting.
+          <br /><br />
+          The project not only helped prepare me for my project and master’s thesis but also gave me a better understanding of
+          how to critically assess and compare ML methods from a scientific perspective. I collaborated closely with both academic and industry supervisors,
+          and read more research papers in one summer than ever before.
+          <br /><br />
+          You can learn more about Solution Seeker <a href="https://www.solutionseeker.no/">here</a>.
+        </p>
+      </S.TextWrapper>
+    </S.MainWrapper>
   )
 }
 
